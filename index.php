@@ -1,3 +1,4 @@
+<!-- File includes -->
 <?php require 'array_list.php'; ?>
 <!DOCTYPE html>
 <html>

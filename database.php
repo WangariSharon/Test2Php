@@ -22,11 +22,12 @@ class Database
     $conn = new mysqli($this->server, $this->username, $this->password, $this->database_name);
 
     if ($conn->connect_error) {
-  		trigger_error('Database connection failed: '  . $conn->connect_error, E_USER_ERROR);
-  		exit;
-	}else{
-		return $conn;
-	}
+      trigger_error('Database connection failed: '  . $conn->connect_error, E_USER_ERROR);
+      exit;
+    }else{
+      // echo "Tuko Fiti; We are connected to ".$this->database_name." database";
+      return $conn;
+      }
   }
 
 
